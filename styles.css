@@ -1,0 +1,100 @@
+html {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    min-width: 250px;
+}
+
+.card:nth-of-type(1) {
+    border-radius: 10px 10px 0 0;
+}
+
+.card:nth-last-child(1) {
+    border-radius: 0 0 10px 10px;
+}
+
+.card {
+    padding: 3em 2.5em;
+    overflow: hidden;
+}
+
+.type {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.description {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 500;
+    margin: 0 0 3em;
+    padding: 0 1em 0 0;
+    line-height: 1.75em;
+}
+
+.learn-more-btn {
+    background-color: hsl(0, 0%, 95%);
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
+    padding: 0.75em 2em;
+    mix-blend-mode: screen;
+}
+
+.card-1 {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+    background-color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 1000px) {
+    .container {
+        max-width: 1150px;
+        margin: 0;
+        height: 100vh;
+        flex-direction: row;
+    }
+
+    .card {
+        height: 50vh;
+    }
+
+    .card:nth-of-type(1) {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .card:nth-last-child(1) {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .type {
+        font-size: 3em;
+    }
+
+    .description {
+        font-size: 1.25em;
+        height: 45%;
+    }
+}
